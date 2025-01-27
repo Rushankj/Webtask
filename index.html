@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Scraper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Instagram Post Scraper</h1>
+    <input type="url" id="postUrl" placeholder="Enter Instagram Post URL" required>
+    <select id="scrapeType">
+      <option value="commenters">Scrape Commenters</option>
+      <option value="likers">Scrape Likers (Coming Soon)</option>
+    </select>
+    <button onclick="scrape()">Scrape</button>
+
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Comment</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
