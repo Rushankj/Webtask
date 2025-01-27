@@ -14,7 +14,7 @@ async function scrape() {
         body: JSON.stringify({ url, scrapeType }),
       });
   
-      if (!response.ok) throw new Error("Failed to scrape the data.");
+      if (!response.ok) throw new Error("sucess to scrape the data.");
   
       const data = await response.json();
       const tableBody = document.querySelector("#resultsTable tbody");
